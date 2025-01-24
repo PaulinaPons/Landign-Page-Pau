@@ -1,0 +1,489 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff; 
+    color: #000000; 
+
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #b8860b;
+}
+
+nav a {
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #666; 
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #fbcf92, #ffab44); 
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero p {
+    color: #555; 
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    background: #6a4d02; 
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.hero a:hover {
+    background: #997b2fa1;
+    color: white;
+}
+
+/* About Section */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ae7e24; 
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+/* Products Section */
+.contenedor {
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.contenedor .cartas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.636);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(144, 105, 0, 0.315);
+}
+
+.contenedor .cartas:hover {
+    height: 400px;
+}
+
+.contenedor .cartas .caja-img {
+    position: absolute;
+    top: 20px;
+    width: 290px;
+    height: 220px;
+    background: #6a4e1a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contenedor .cartas:hover .caja-img {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+}
+
+.caja-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.contenedor .cartas .contenido {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contenedor .cartas:hover .contenido {
+    top: 130px;
+    height: 250px;
+}
+
+.contenedor .cartas .contenido h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #9b6602;
+}
+
+.contenedor .cartas .contenido p {
+    color: #333;
+}
+
+.contenedor .cartas .contenido a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+   background: #b38000; 
+    color: white;
+    font-weight: 500;
+}
+
+.contenedor .cartas .contenido a:hover {
+    opacity: 0.8;
+    background-color: #7b4c00;
+    color: #afafaf;
+}
+
+/* Comments Section */
+.comments {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.comments h2 {
+    font-size: 2.5rem;
+    color: #b38000;
+    margin-bottom: 20px;
+}
+
+.comments p {
+    font-size: 1rem;
+    color: #553d00;
+    margin-bottom: 30px;
+}
+
+.comments form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.comments form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.comments form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.comments form button {
+    background: #875a00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comments form button:hover {
+    background: #bc7a00;
+}
+
+.map-container {
+    position: relative;
+    width: 100%; 
+    height: 500px; 
+    border: 2px solid #ddd; 
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    border: none; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.map-container:hover iframe {
+    transform: scale(1.02); 
+    filter: brightness(1.1); 
+}
+
+
+/* Pricing Section */
+.pricing-section {
+    padding: 2rem;
+    background: linear-gradient(135deg, #fbcf92, #ffab44); 
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #202020;
+}
+
+.pricing-card .price {
+    font-size: 1.8rem;
+    color: #8f6400;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.pricing-card ul li {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.pricing-card .pricing-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #956722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pricing-card .pricing-button:hover {
+    background-color: #7c631d;
+}
+
+/* Hover Effects */
+.jewelry-container {
+    background: #ffffff;
+    display: flex;
+}
+
+.jewelry-card {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.jewelry-card img {
+    object-fit: cover;
+    filter: grayscale(1);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.jewelry-card:hover {
+    flex: 10;
+    transition: 0.5s;
+}
+
+.jewelry-card:hover img {
+    filter: none;
+    transition: 0.5s;
+}
+
+
+/*Card Flip*/
+
+.card-container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card .front {
+    background: #fff;
+}
+
+.card .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .back {
+    background: #333;
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .back .details {
+    padding: 10px;
+}
+
+.card .back .details h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.card .back .details span {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #fbcf92, #ffab44); 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
